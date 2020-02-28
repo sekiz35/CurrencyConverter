@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddCurrencyScreen">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved Currencies"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal" >
+        <TextView
+            android:id="@+id/txtSaved0"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:minLines="10"
+            android:maxWidth="10dp"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/txtSaved1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:minLines="10"
+            android:maxWidth="40dp"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtSaved2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:minLines="10"
+            android:maxWidth="155dp"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/txtSaved3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:minLines="10"
+            android:maxWidth="155dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add new currency"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtCurrencyCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="currencyCode"
+        android:textSize="16dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/txtCurrencyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="currencyName"
+        android:textSize="16dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/txtCountryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="countryName"
+        android:textSize="16dp"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/txtSymbol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="symbol"
+        android:textSize="16dp"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add"
+        android:textSize="16dp"/>
+
+</LinearLayout>
